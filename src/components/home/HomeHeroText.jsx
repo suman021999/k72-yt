@@ -3,24 +3,30 @@ import Video from './Video'
 
 const HomeHeroText = () => {
   return (
-    <>
-      <div className='font-[font1] pt-5 text-center'>
-        <div className='text-[8vw] flex justify-center  items-center uppercase leading-[10vw]'>
-          L'étincelle
+    <div className="relative w-full h-screen flex justify-center lg:items-start items-center">
+      <div className="font-[font1] text-white text-center">
+        {/* Line 1 */}
+        <div className="lg:text-[8vw] text-[12vw] uppercase lg:leading-[8vw] leading-[10vw]">
+          The spark for
         </div>
-        <div className='text-[8vw] flex justify-center  items-start uppercase leading-[10vw]'>
-          qui
-          <div className='h-[7vw] w-[16vw] rounded-full overflow-hidden'>
+
+        {/* Line 2 */}
+        <div className="lg:text-[8vw] text-[12vw] flex  justify-center items-center uppercase lg:leading-[8vw] leading-[10vw] gap-2">
+          <span>all</span>
+          <div className="h-[7vw] w-[16vw] rounded-full overflow-hidden">
             <Video />
-            </div>
-          génère
+          </div>
+          <span>things</span>
         </div>
-        <div className='text-[8vw] flex justify-center  items-center uppercase leading-[10vw]'>
-          la créativité
+
+        {/* Line 3 */}
+        <div className="lg:text-[8vw] text-[12vw] uppercase lg:leading-[8vw] leading-[10vw]">
+          creative
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
 export default HomeHeroText
+

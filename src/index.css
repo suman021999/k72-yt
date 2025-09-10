@@ -9,7 +9,6 @@
     src: url(../public/fonts/Lausanne-500.woff2);
 }
 
-
 .moveX{
     animation-name: moveAnimation;
     animation-duration: 10s;
@@ -33,4 +32,9 @@
     to{
         transform: translateX(-100%);
     }
+}
+
+body{
+    color: black;
+    overflow-x: hidden;
 }
