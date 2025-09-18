@@ -67,7 +67,7 @@ const Projects = () => {
         <div className='-lg:mt-20 lol'>
           {projects.map((index,id)=>(
             
-            <div key={id} className='hero lg:h-[885px] w-full flex lg:flex-row flex-col lg:gap-4 gap-2 mb-4'>
+            <div key={id} className='hero lg:h-[70%] w-full flex lg:flex-row flex-col lg:gap-4 gap-2 mb-4'>
               <ProjectCard image1={index.image1} image2={index.image2}/>
             </div>
           ))}      
