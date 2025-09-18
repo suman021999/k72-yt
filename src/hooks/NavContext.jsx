@@ -9,9 +9,13 @@ const [navColor, setNavColor] = useState('white')
 const [navOpen, setNavOpen] = useState(false)
 const locate = useLocation().pathname
 
-useEffect(()=>{
-
-})
+   useEffect(()=>{
+        if(locate == '/projects' || locate == '/agence'){
+            setNavColor('black')
+        }else{
+            setNavColor('white')
+        }
+    },[locate])
 
 
 

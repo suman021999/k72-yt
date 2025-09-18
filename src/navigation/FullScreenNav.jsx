@@ -2,6 +2,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import React, { useContext, useRef} from "react";
 import { NavbarContext } from "../hooks/NavContext";
+import { Link } from "react-router-dom";
 
 
 
@@ -122,7 +123,9 @@ const fullScreenRef = useRef(null)
           </div>
 
           <div className="pt-2">
+         <Link to='/projects'>
             <div className=" link origin-top relative border-t-1 mt-2  border-white">
+              
               <h1 className="font-[font2] text-5xl lg:text-[6vw] text-center lg:leading-[0.8] lg:pt-8 pt-3 uppercase">
                 Projets
               </h1>
@@ -165,8 +168,12 @@ const fullScreenRef = useRef(null)
                   />
                 </div>
               </div>
-            </div>
 
+              
+            </div>
+           </Link>
+
+           <Link to='/agence'>
             <div className=" link origin-top relative border-t-1 mt-2 border-white">
               <h1 className="font-[font2] text-5xl lg:text-[6vw] text-center lg:leading-[0.8] lg:pt-8 pt-3 uppercase">
                 agence
@@ -211,96 +218,13 @@ const fullScreenRef = useRef(null)
                 </div>
               </div>
             </div>
+           </Link>
+           
 
-            <div className=" link origin-top relative border-t-1 mt-2  border-white">
-              <h1 className="font-[font2] text-5xl lg:text-[6vw] text-center lg:leading-[0.8] lg:pt-8 pt-3 uppercase">
-                Projets
-              </h1>
-              <div className="moveLink absolute text-black flex top-0 bg-[#D3FD50]">
-                <div className="moveX flex items-center">
-                  <h2 className="whitespace-nowrap font-[font2] lg:text-[6vw] text-5xl  text-center lg:leading-[0.8] lg:pt-10 pt-4 uppercase">
-                    Pour Tout voir
-                  </h2>
-                  <img
-                    className="lg:h-24 h-14 rounded-full shrink-0 lg:w-64 w-32 object-cover"
-                    src="https://k72.ca/uploads/caseStudies/WIDESCAPE/WS---K72.ca---MenuThumbnail-640x290.jpg"
-                    alt=""
-                  />
-                  <h2 className="whitespace-nowrap font-[font2] lg:text-[6vw] text-5xl  text-center lg:leading-[0.8] lg:pt-10 pt-4 uppercase">
-                    Pour Tout voir
-                  </h2>
-                  <img
-                    className="lg:h-24 h-14 rounded-full shrink-0 lg:w-64 w-32 object-cover"
-                    src="https://k72.ca/uploads/caseStudies/PJC/Thumbnails/PJC_SiteK72_Thumbnail_640x290-640x290.jpg"
-                    alt=""
-                  />
-                </div>
+            
 
-                <div className="moveX flex items-center">
-                  <h2 className="whitespace-nowrap font-[font2] lg:text-[6vw] text-5xl  text-center lg:leading-[0.8] lg:pt-10 pt-4 uppercase">
-                    Pour Tout voir
-                  </h2>
-                  <img
-                    className="lg:h-24 h-14 rounded-full shrink-0 lg:w-64 w-32 object-cover"
-                    src="https://k72.ca/uploads/caseStudies/WIDESCAPE/WS---K72.ca---MenuThumbnail-640x290.jpg"
-                    alt=""
-                  />
-                  <h2 className="whitespace-nowrap font-[font2] lg:text-[6vw] text-5xl  text-center lg:leading-[0.8] lg:pt-10 pt-4 uppercase">
-                    Pour Tout voir
-                  </h2>
-                  <img
-                    className="lg:h-24 h-14 rounded-full shrink-0 lg:w-64 w-32 object-cover"
-                    src="https://k72.ca/uploads/caseStudies/PJC/Thumbnails/PJC_SiteK72_Thumbnail_640x290-640x290.jpg"
-                    alt=""
-                  />
-                </div>
-              </div>
-            </div>
+            
 
-            <div className=" link origin-top relative border-y-1 mt-2 border-white">
-              <h1 className="font-[font2] text-5xl lg:text-[6vw] text-center lg:leading-[0.8] lg:pt-8 pt-3 uppercase">
-                Projets
-              </h1>
-              <div className="moveLink absolute text-black flex top-0 bg-[#D3FD50]">
-                <div className="moveX flex items-center">
-                  <h2 className="whitespace-nowrap font-[font2] lg:text-[6vw] text-5xl  text-center lg:leading-[0.8] lg:pt-10 pt-4 uppercase">
-                    Pour Tout voir
-                  </h2>
-                  <img
-                    className="lg:h-24 h-14 rounded-full shrink-0 lg:w-64 w-32 object-cover"
-                    src="https://k72.ca/uploads/caseStudies/WIDESCAPE/WS---K72.ca---MenuThumbnail-640x290.jpg"
-                    alt=""
-                  />
-                  <h2 className="whitespace-nowrap font-[font2] lg:text-[6vw] text-5xl  text-center lg:leading-[0.8] lg:pt-10 pt-4 uppercase">
-                    Pour Tout voir
-                  </h2>
-                  <img
-                    className="lg:h-24 h-14 rounded-full shrink-0 lg:w-64 w-32 object-cover"
-                    src="https://k72.ca/uploads/caseStudies/PJC/Thumbnails/PJC_SiteK72_Thumbnail_640x290-640x290.jpg"
-                    alt=""
-                  />
-                </div>
-
-                <div className="moveX flex items-center">
-                  <h2 className="whitespace-nowrap font-[font2] lg:text-[6vw] text-5xl  text-center lg:leading-[0.8] lg:pt-10 pt-4 uppercase">
-                    Pour Tout voir
-                  </h2>
-                  <img
-                    className="lg:h-24 h-14 rounded-full shrink-0 lg:w-64 w-32 object-cover"
-                    src="https://k72.ca/uploads/caseStudies/WIDESCAPE/WS---K72.ca---MenuThumbnail-640x290.jpg"
-                    alt=""
-                  />
-                  <h2 className="whitespace-nowrap font-[font2] lg:text-[6vw] text-5xl  text-center lg:leading-[0.8] lg:pt-10 pt-4 uppercase">
-                    Pour Tout voir
-                  </h2>
-                  <img
-                    className="lg:h-24 h-14 rounded-full shrink-0 lg:w-64 w-32 object-cover"
-                    src="https://k72.ca/uploads/caseStudies/PJC/Thumbnails/PJC_SiteK72_Thumbnail_640x290-640x290.jpg"
-                    alt=""
-                  />
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
