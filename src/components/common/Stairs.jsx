@@ -1,5 +1,5 @@
 import { useGSAP } from '@gsap/react'
-import gsap from 'gsap/all'
+import gsap from 'gsap'
 import React, { useRef } from 'react'
 import { useLocation } from 'react-router-dom'
 
@@ -12,7 +12,7 @@ const pageRef=useRef(null)
     const currentPath = useLocation().pathname
 
 
-     useGSAP(() => {
+useGSAP(() => {
     const tl=gsap.timeline()
 
 
